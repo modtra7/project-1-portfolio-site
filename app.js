@@ -1,19 +1,60 @@
-//not in use atm
+$(() => {
 
-// $(() => {
-//     const $sections = $('.section')
-//     const $sectBtns = $('.controls')
-//     const $sectBtn = $('.control')
-//     const $allSections = $('.main-content')
+    // === sticky banner === //
 
-//     const pickPage = () => {
-//         for (let i = 0; i < $sectBtn.length; i++) {
-//             $sectBtn[i].on('click', function() {
-//                 let currentBtn = $('.active-btn')
-//                 currentBtn[0].className = currentBtn[0].className.replace('.active-btn', '')
-//                 $(this).className += ' active-btn'
-//             })
-//         }
-//     }
-//     pickPage()
-// })
+    $(window).scroll(() => {
+        const $banner = $('.banner'),
+        scroll = $(window).scrollTop()
+        if (scroll >= 100){
+            $banner.addClass('sticky')
+        }else {
+            $banner.removeClass('sticky')
+        }
+    })
+
+
+    // === Resume Modal === //
+
+    const $open = $('#open')
+    const $modal = $('#modal')
+    const $close = $('#close')
+
+    const openModal = () => {
+        $modal.css('display', 'block')
+    }
+    $open.on('click', openModal)
+
+    const closeModal = () => {
+        $modal.css('display', 'none')
+    }
+    $close.on('click', closeModal)
+
+
+    // === Portfolio Carousel === //
+
+    let currentImgIndex = 0
+    const numOfImgs = $('carousel-imgs').children().length - 1
+
+    // Next //
+    $('.next').on('click', () => {
+        $('.carousel-imgs').children().eq(currentImgIndex).css('display', 'none')
+        if (currentImgIndex < numOfImgs){
+            currentImgIndex++
+        }else{
+            currentImgIndex = 0
+        }
+
+        $('.carousel-imgs').children().eq(currentImgIndex).css('display', 'block')
+    })
+
+    // Previous //
+    $('.previous').on('click', () => {
+        $('.carousel-imgs').children().eq(currentImgIndex).css('display', 'none')
+        if (currentImgIndex > 0) {
+            currentImgIndex--
+        }else{
+            currentImgIndex = numOfImgs
+        }
+        $('.carousel-imgs').children().eq(currentImgIndex).css('display', 'block')
+    })
+})
