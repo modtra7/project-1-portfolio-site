@@ -3,7 +3,7 @@ $(() => {
     // === sticky banner === //
 
     $(window).scroll(() => {
-        const $banner = $('.banner'),
+        const $banner = $('.banner')
         scroll = $(window).scrollTop()
         if (scroll >= 100){
             $banner.addClass('sticky')
@@ -33,7 +33,7 @@ $(() => {
     // === Portfolio Carousel === //
 
     let currentImgIndex = 0
-    const numOfImgs = $('carousel-imgs').children().length - 1
+    const numOfImgs = $('.carousel-imgs').children().length - 1
 
     // Next //
     $('.next').on('click', () => {
