@@ -15,7 +15,7 @@ body {
 .banner {
     width: 100%;
     height: 100px;
-    background-color: #000007;
+    background-color: #1c1c35;
     z-index: 10;
 }
 
@@ -42,29 +42,29 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fffff7;
+    color: #dededa;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #00ccf5;
+    color: #ab7bfd;
     transition: .4s;
 }
 
 .logo {
-    color: #fffff7;
+    color: #dededa;
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
 span {
-    color: #00ccf5;
+    color: #ab7bfd;
 }
 
 #menu {
     font-size: 25px;
-    color: #fffff7;
+    color: #dededa;
     cursor: pointer;
     z-index: 10;
     display: none;
@@ -73,6 +73,7 @@ span {
 #home {
     padding: 20px 20px;
     width: 100%;
+    height: 100vh;
     background-image: url(img.jpg/image-bkgd.jpeg);
     background-size: cover;
     background-position: center;
@@ -89,19 +90,19 @@ span {
 
 
 .home-content h1 {
-    color: #fffff7;
+    color: #dededa;
     margin: 20px 0;
     font-size: 75px;
 }
 
 .home-content h4{
-    color: #fffff7;
+    color: #dededa;
     letter-spacing: 2px;
     font-size: 25px;
 }
 
 .home-content p{
-    color: #00ccf5;
+    color: #ab7bfd;
     font-size: 20px;
     margin-bottom: 50px;
 }
@@ -122,7 +123,7 @@ span {
     display: inline-block;
     width: 100%;
     padding: 14px;
-    border: 2px solid #00ccf5;
+    border: 2px solid #ab7bfd;
     border-radius: 50px;
     outline: none;
 }
@@ -134,8 +135,8 @@ span {
     outline: none;
     padding: 10px 30px;
     border-radius: 50px;
-    background-color: #00ccf5;
-    color: #fffff7;
+    background-color: #ab7bfd;
+    color: #dededa;
     top: 6px;
     right: 6px;
     box-shadow: 0 0 5px #000007, 0 0 15px #888;
@@ -143,8 +144,8 @@ span {
 
 .form form input:last-child:hover {
     background-color: transparent;
-    border: 1px solid #00ccf5;
-    color: #00ccf5;
+    border: 1px solid #ab7bfd;
+    color: #ab7bfd;
     cursor: pointer;
     transition: .4s;
 }
@@ -153,14 +154,14 @@ span {
     width: 100%;
     height: 100%;
     padding: 100px 0;
-    background-color: #000033;
+    background-color: #1c1c35;
     display: flex;
     flex-direction: column;
 }
 
 #bio h1 {
     font-size: 70px;
-    color: #00ccf5;
+    color: #ab7bfd;
     text-align: center;
 }
 
@@ -183,7 +184,7 @@ span {
 }
 
 .bio-text h2 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 60px;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -191,21 +192,21 @@ span {
 }
 
 .bio-text h3 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
 .bio-text p {
-    color: #00ccf5;
+    color: #ab7bfd;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 24px;
 }
 
 #resume {
-    background: #000066;
+    background: #26264a;
     width: 100%;
     height: 100%;
     padding: 100px 0;
@@ -214,7 +215,7 @@ span {
 }
 
 .title h1 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 70px;
     margin: 20px auto;
     text-align: center;
@@ -225,11 +226,13 @@ span {
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
-    height: 365px;
-    width: 335px;
+    height: 200px;
+    width: 200px;
     padding: 20px 35px;
     background-color: #000033;
     border-radius: 20px;
@@ -244,24 +247,25 @@ span {
     display: block;
     text-align: center;
     margin: 25px 0;
-    color: #00ccf5;
+    color: #ab7bfd;
 }
 
 .card h4 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 30px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .card h5 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 20px;
     margin-bottom: 10px;
     opacity: .5;
 }
 
 .card p {
-    color: #00ccf5;
+    color: #ab7bfd;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 25px;
@@ -298,7 +302,7 @@ span {
 
 .modal-buttons {
     border: 1px solid transparent;
-    background-color: #00ccf5;
+    background-color: #ab7bfd;
     color: #000006;
     border-radius: 50px;
     padding: 12px 16px;
@@ -307,15 +311,15 @@ span {
 
 .modal-buttons:hover {
     background-color: transparent;
-    border: 1px solid #00ccf5;
-    color: #00ccf5;
+    border: 1px solid #ab7bfd;
+    color: #ab7bfd;
     cursor: pointer;
     transform: scale(1.2);
     transition: .4s;
 }
 
 #projects {
-    background-color: #000033;
+    background-color: #1c1c35;
     width: 100%;
     height: 100%;
     padding: 100px 0;
@@ -328,13 +332,13 @@ span {
 }
 
 .project-content h2 {
-    color: #fffff7;
+    color: #dededa;
     font-size: 70px;
     margin: 20px auto;
 }
 
 .project-content p {
-    color: #fffff7;
+    color: #dededa;
     padding: 10px;
     margin-bottom: 10px;
     opacity: .5;
@@ -346,7 +350,7 @@ span {
 }
 
 .carousel-imgs {
-    width: 40vw;
+    width: 55vw;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -355,7 +359,14 @@ span {
 .carousel-imgs img {
     width: 100%;
     border-radius: 10px;
+    border: 3px solid #ab7bfd;
     display: none;
+}
+
+.caption {
+    padding: 20px 10px;
+    text-align: center;
+    color: #dededa;
 }
 
 .buttons {
@@ -363,14 +374,14 @@ span {
     padding: 10px;
     text-align: center;
     border-radius: 50%;
-    background-color: #00ccf5;
+    background-color: #ab7bfd;
     color: #000007;
 }
 
 .buttons:hover {
     cursor: pointer;
     background-color: transparent;
-    color: #00ccf5;
+    color: #ab7bfd;
 
 }
 
@@ -381,8 +392,8 @@ span {
 #links {
     position: relative;
     width: 100%;
-    height: 150px;
-    background-color: #000007;
+    height: 200px;
+    background-color: #26264a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -390,8 +401,8 @@ span {
 }
 
 #links p {
-    font-size: 20px;
-    color: #fffff7;
+    font-size: 25px;
+    color: #dededa;
     opacity: .7;
     margin-bottom: 20px;
     font-weight: bold;
@@ -402,16 +413,16 @@ span {
 }
 
 .socials a {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00ccf5;
-    color: #fffff7;
+    background: #ab7bfd;
+    color: #dededa;
     text-decoration: none;
     border-radius: 50%;
-    margin: 20px 10px;
+    margin: 20px 20px;
     font-size: 25px;
 }
 
